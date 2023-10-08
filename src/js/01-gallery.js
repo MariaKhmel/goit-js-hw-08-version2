@@ -27,7 +27,10 @@ function createGalleryMarkup(items) {
     }).join('');
 }
 
-let gallery = new SimpleLightbox('.gallery a');
+let gallery = new SimpleLightbox('.gallery a', {
+  captionsData: 'alt',
+  captionDelay:250, 
+});
 
 // refs.gallery.addEventListener('click', pictureClick);
 
