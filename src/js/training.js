@@ -2,6 +2,7 @@ import { instruments } from "./instruments";
 import * as basicLightbox from 'basiclightbox'
 import "simplelightbox/dist/simple-lightbox.min.css";
 
+
 const refs = {
     jsList: document.querySelector('.js-list'),
     jsSearch: document.querySelector('.js-search'),
@@ -34,12 +35,15 @@ createMarkUp(instruments);
 refs.jsList.addEventListener('click', onInstrumentClick);
 
 function onInstrumentClick(e) {
-    e.preventDefault();  
-    if (e.target.classList.contains('js-info')) {
-        const product = findIdElement(e.target);
-        createProduct(product);
+    // e.preventDefault(); 
+    const product = findIdElement(e.target);
+    console.log(product);
+    createModal(product);
+    // if (e.target.classList.contains('js-info')) {
+    //     const product = findIdElement(e.target);
+    //     createProduct(product);
 
-    }
+    // }
 }
 
 
@@ -52,7 +56,15 @@ function findIdElement(elem) {
 }
 
 
-function createProduct(product) {
+function createModal(product) {
+    //   const option = {
+    //     onShow() {
+    //       console.log(this);
+    //       document.addEventListener('keydown', closeModal);
+    //     },
+
+    //     onClose() {},
+    //   };
 
     const instance = basicLightbox.create(`
 	<div class="modal">
@@ -64,18 +76,18 @@ function createProduct(product) {
         <button class="js-favorite">Add to favorite</button>
         <button class="js-basket">Add to basket</button>
       </div>
-</div>`)
-// `, {
-//         handler: null,
-//         onShow(instance) {
-//             this.handler = closeModal.bind(instance)
-//             document.addEventListener('keydown', this.handler);
-//         },
+</div>
+`
+        // , {
+        // handler: null,
+        // onShow(instance) {
+        //     this.handler = closeModal.bind(instance)
+        //     document.addEventListener('keydown', this.handler);
+        // },
 
-//         onClose() {
-//             document.removeEventListener('keydown', this.handler);
-//         },
-//     });
-    // instance.show();
-
+        // onClose() {
+        //     document.removeEventListener('keydown', this.handler);
+        // },
+    );
+    instance.show();
 }

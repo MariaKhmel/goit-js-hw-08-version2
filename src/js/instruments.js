@@ -1,7 +1,7 @@
 const instruments = [
     {
         id: 1,
-        img: 'https://static.dnipro-m.ua/cache/products/4878/catalog_origin_269592.jpg',
+        img: 'https://static.dnipro-m.ua/cache/products/5596/catalog_origin_191105.jpg',
         name: 'Шуруповерт',
         price: 1500,
         description:
@@ -9,7 +9,7 @@ const instruments = [
     },
     {
         id: 2,
-        img: 'https://static.dnipro-m.ua/cache/products/5096/catalog_origin_271077.jpg',
+        img: 'https://static.dnipro-m.ua/cache/products/5596/catalog_origin_191105.jpg',
         name: 'Перфоратор',
         price: 3948,
         description:
@@ -17,7 +17,7 @@ const instruments = [
     },
     {
         id: 3,
-        img: 'https://static.dnipro-m.ua/cache/products/1248/catalog_origin_257336.jpg',
+        img: 'https://static.dnipro-m.ua/cache/products/5596/catalog_origin_191105.jpg',
         name: 'Шліфмашина',
         price: 1299,
         description:
@@ -33,7 +33,7 @@ const instruments = [
     },
     {
         id: 5,
-        img: 'https://static.dnipro-m.ua/cache/products/2300/catalog_origin_261037.jpg',
+        img: 'https://static.dnipro-m.ua/cache/products/5596/catalog_origin_191105.jpg',
         name: 'Рівень',
         price: 897,
         description:
@@ -41,7 +41,7 @@ const instruments = [
     },
     {
         id: 6,
-        img: 'https://static.dnipro-m.ua/cache/products/6566/catalog_origin_270253.jpg',
+        img: 'https://static.dnipro-m.ua/cache/products/5596/catalog_origin_191105.jpg',
         name: 'Тример',
         price: 3699,
         description:
@@ -49,7 +49,7 @@ const instruments = [
     },
     {
         id: 7,
-        img: 'https://static.dnipro-m.ua/cache/products/6483/catalog_origin_270227.jpg',
+        img: 'https://static.dnipro-m.ua/cache/products/5596/catalog_origin_191105.jpg',
         name: 'Мотокоса',
         price: 11049,
         description:
@@ -57,7 +57,7 @@ const instruments = [
     },
     {
         id: 8,
-        img: 'https://static.dnipro-m.ua/cache/products/2741/catalog_origin_271775.jpg',
+        img: 'https://static.dnipro-m.ua/cache/products/5596/catalog_origin_191105.jpg',
         name: 'Генератор',
         price: 10890,
         description:
